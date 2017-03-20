@@ -1,0 +1,110 @@
+<fragment xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/map"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context="com.example.admin.thunderbolt.SecondActivity">
+    <!--tools:layout="@layout/content_main" >-->
+
+    <!--<TextView-->
+        <!--android:text="TextView"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="25dp"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginTop="7dp"-->
+        <!--android:id="@+id/MapTextView"-->
+        <!--android:background="@android:color/background_light"-->
+        <!--android:layout_marginLeft="10dp"-->
+        <!--android:layout_marginRight="10dp"-->
+        <!--android:textSize="18sp"/>-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="170dp"
+            android:layout_height="22dp"
+            android:textStyle = "bold"
+            android:textColor="#0c0a15"
+            android:layout_marginTop="7dp"
+            android:id="@+id/MapTextView"
+            android:background="@layout/rounded_corner"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="160dp"
+            android:layout_height="22dp"
+            android:textStyle = "bold"
+            android:textColor="#0c0a15"
+            android:layout_marginTop="7dp"
+            android:id="@+id/MapTextView1"
+            android:background="@layout/rounded_corner"
+            android:layout_marginLeft="200dp"
+            android:layout_marginRight="10dp"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="240dp"
+            android:layout_height="22dp"
+            android:textStyle = "bold"
+            android:textColor="#0c0a15"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:id="@+id/MapTextView2"
+            android:background="@layout/rounded_corner"
+            android:layout_marginRight="600dp"
+            android:textSize="16sp"/>
+
+        <Button
+            android:text="RESET"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Temp2"
+            tools:text="RESET"
+            android:layout_centerHorizontal="true"
+            android:layout_weight="1"
+            android:layout_marginTop="520dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+
+
+        <Button
+            android:text="START"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Temp"
+            tools:text="START"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="false"
+            android:layout_weight="1"
+            android:layout_toRightOf="@+id/DeviceNameID" />
+
+        <Button
+            android:text="STOP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Temp1"
+            tools:text="STOP"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="false"
+            android:layout_alignRight="@+id/DeviceNameID"
+            android:layout_alignEnd="@+id/DeviceNameID"
+            android:layout_weight="1" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</fragment>
